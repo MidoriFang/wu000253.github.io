@@ -1,0 +1,118 @@
+/*   To reset headers                 */
+h1,h2,h3,h4,h5,h6 {
+    font-weight: normal;
+    font-style: normal;
+}
+
+/*      To create the background image              */
+.container {
+    font-family: 'Montserrat', sans-serif;
+    background-image: url(/mtm6201-landing-page/master-files-landing-page/images/bg-image/scooter.svg);
+    background-position: center;
+    background-size: 50%;
+    background-repeat: no-repeat;
+    background-color: rgb(247, 247, 255);
+    margin: 0 30px;
+}
+
+/*        To resize the logo            */
+.site-header img {
+    width: 70px;
+    height: 70px;
+    margin-left: 50px;
+}
+
+/*        To make the h1 and h2 more bold            */
+h1 {
+    font-weight: bolder;
+    font-size: 4rem;
+}
+
+h2, h5 {
+    font-weight: bolder;
+}
+
+/*      To make the main content a flexbox and wraping              */
+.main-content {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+/*        To stylize the form            */
+.form-container {
+    /*flex-basis: content;*/
+    background-color: white;
+    box-shadow: 5px 5px 10px grey;
+    border-radius: 30px;
+    padding: 30px;
+    min-width: 250px;
+    min-height: 300px;
+}
+
+/*      To stylize the form button              */
+.form-1 button {
+    background-color: rgb(87, 238, 171);
+    border-radius: 8px;
+    height: 40px;
+    width: 100%;
+    font-weight: bold;
+    font-size: 1.25rem;
+}
+
+/*       To stylize form input             */
+.form-1 input[type=text], input[type=email] {
+    border-radius: 5px;
+    background-color: rgb(244, 244, 245);
+    height: 30px;
+    width: 100%;
+    padding: 5px;
+    margin: 10px 0;
+}
+
+/*         To stylize p, and a font           */
+.form-1 p, a {
+    font-size: 10px;
+}
+a {
+    text-decoration: none;
+    color: orange;
+}
+
+footer {
+    margin-top: 50px;
+}
+
+/*       To stylize footer             */
+.footer {
+    background-color: rgb(255, 253, 140);
+    padding: 30px;
+}
+
+.footer-wrap {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.footer-form button {
+    background-color: rgb(255, 132, 128);
+    border-radius: 8px;
+    height: 30px;
+    width: 150px;
+    color: white;
+    font-weight: bold;
+}
+
+.icon {
+    margin-left: auto;
+}
+
+/* Inspired by Professor Eisenbraun*/
+@media only screen and (max-width: 1380px) and (min-width:300px) {
+    .container {
+        background-position: 10% 30%;
+    }
+    
+    .content-2 {
+      margin-top: 400px;
+    }
+  }
