@@ -1,0 +1,488 @@
+@charset "utf-8";
+
+/*************************
+The following is a CSS Reset
+*************************/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/*******************************************
+The CSS Reset ends here and the style follows below
+********************************************/
+
+/************************************************************
+Body
+************************************************************/
+
+body {
+	font-family: 'Raleway', sans-serif;
+}
+
+.content {
+	margin: 0 30px;
+}
+
+.content p {
+	font-size: 0.75rem;
+}
+
+/* style header */
+
+/* center and add color to header*/
+.site-header {
+	background-color: #3c3b3a;
+	text-align: center;
+}
+
+/* resize logo*/
+.logo {
+	width: 100px;
+	height: 100px;
+}
+
+/* space between links*/
+nav ul li {
+	margin-top: 10px;
+}
+
+/* style links*/
+nav ul li a {
+	color: #f2f2f2;
+	text-decoration: none;
+}
+
+/* show user which page they are on*/
+.active {
+	font-weight: bold;
+}
+
+
+/* content starts here*/
+
+.title-1 {
+	font-size: 2rem;
+	font-weight: bold;
+}
+
+.sports p {
+	color: #26a682;
+}
+
+.start button {
+	color: #f2f2f2;
+	background-color: #26a682;
+	border-radius: 30px;
+	font-size: 1.5rem;
+	width: 250px;
+	box-shadow: 0 8px 16px 0 #3c3b3a;
+}
+
+img {
+	max-width: 100%;
+}
+
+.title {
+	font-size: 1.5rem;
+	font-style: italic;
+}
+
+.sub-title {
+	color: #26a682;
+}
+
+.learn {
+	color: #f2f2f2;
+	background-color: #26a682;
+	border-radius: 30px;
+	font-size: 1.25rem;
+	box-shadow: 0 8px 16px 0 #3c3b3a;
+	padding: 5px;
+}
+
+.president {
+	background-color: #3c3b3a;
+	color: #f2f2f2;
+}
+
+.president img {
+	border-radius: 50%;
+	width: 200px;
+	height: 200px;
+}
+
+.president h2 {
+	font-size: 1.5rem;
+	font-weight: bold;
+}
+
+/* footer starts here*/
+
+.footer {
+	background-color: #3c3b3a;
+	color: #f2f2f2;
+	padding-left: 45%;
+}
+
+.arrow {
+	font-size: xx-large;
+}
+.arrow i {
+	color: #26a682;
+	background-color: #3c3b3a;
+}
+
+.arrow p {
+	font-size: 0.75rem;
+	color: #f2f2f2;
+}
+
+/* makes the button stay in place */
+.top-btn{
+    position: fixed; 
+    bottom: 10px;
+    right: 10px;
+
+    color: rgba (0, 0, 0, 0.7);
+    z-index: 999;
+}
+.arrow p {
+	position: fixed; 
+    bottom: 1px;
+    right: 10px;
+
+    color: rgba (0, 0, 0, 0.7);
+    z-index: 999;
+}
+
+/* animation*/
+
+@keyframes scale {
+	0%, 100% {
+		transform: scale(1);
+	}
+	10% {
+		transform: scale(0.5);
+		background-color: salmon;
+	}
+}
+
+
+
+.arrow i {
+	animation-name: scale;
+	animation-duration: 2s;
+	animation-iteration-count: infinite;
+	animation-timing-function: ease-in-out;
+}
+
+li:hover {
+	scale: 2;
+}
+
+/* About page*/
+
+/* center header in image*/
+.banner {
+	position: relative;
+}
+
+.banner h1{
+	position: absolute;
+	top: 50%;
+	right: 50%;
+	color: #f2f2f2;
+	font-size: 3rem;
+	font-weight: bold;
+}
+
+.question .title {
+	font-size: 1.5rem;
+	font-style: italic;
+	font-weight: bold;
+}
+
+.title-2 {
+	font-size: 1.5rem;
+}
+
+.white {
+	background-color: #F2F2F2;
+}
+
+.subscribe {
+	background-color: #3c3b3a;
+	color: #f2f2f2;
+}
+
+.subscribe button {
+	color: #f2f2f2;
+	background-color: #26a682;
+	border-radius: 30px;
+	font-size: 1rem;
+}
+
+.big {
+	font-size: 3rem;
+	font-weight: bold;
+}
+
+/* center logos https://stackoverflow.com/questions/9980531/center-image-in-div-horizontally*/
+.sponsors img {
+	width: 50%;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+/* Contact page*/
+
+.c-title {
+	font-size: 2.5rem;
+	font-weight: bold;
+}
+
+.form {
+	background-color: #26a682;
+	box-shadow: 5px 5px 10px grey;
+    border-radius: 30px;
+    padding: 30px;
+    max-width: 400px;
+	max-height: 600px;
+	margin: 0 auto;
+}
+
+.form input, textarea {
+	border-radius: 5px;
+    background-color: #f2f2f2;
+    height: 30px;
+    width: 100%;
+    padding: 5px;
+    margin: 10px 0;
+}
+
+.c-title-2 {
+	font-size: 2rem;
+	font-weight: bold;
+}
+
+/* tablet*/
+
+@media screen and (max-width: 1100px) and (min-width: 768px) {
+	
+	/* header*/
+	/* to create horrizontal nav bar*/
+
+	.site-header {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-between;
+    	align-items: center;
+	}
+
+	.site-header ul {
+		display: flex;
+	}
+
+	/* content*/
+
+	.intro {
+		text-align: center;
+	}
+
+	.sports {
+		display: flex;
+		justify-content: center;
+	}
+
+	.discover {
+		width: 50%;
+		height: 50%;
+	}
+
+	.entertainment img {
+		width: 100%;
+		height: 100%;
+	}
+
+	.president {
+		display: grid;
+		grid-template-columns: 1fr 1fr 1fr;
+		grid-template-rows: 1fr 1fr;
+	}
+
+	.president img {
+		grid-column: 1/2;
+	}
+	
+	.president h2 {
+		grid-row: 2/3;
+	}
+	
+	.president p {
+		grid-column: 2/4;
+		grid-row: 2/4;
+	}
+
+	.entertainment {
+		text-align: left;
+	}
+
+	.entertainment .learn {
+		text-align: right;
+	}
+
+	/* about page*/
+
+	.content h1,p {
+		padding: 0 30px;
+	}
+
+	.question h2, h3, p {
+		margin: 0 30px;
+	}
+
+
+	/* contact page*/
+
+	.contact {
+		padding: 30px 0;
+	}
+	
+}
+
+
+
+@media screen and (min-width: 1100px) {
+
+	.flex {
+		float: left;
+	}
+
+	.section-1 {
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		grid-template-rows: repeat(4, 1fr);
+		float: left;
+	}
+
+	.section-1 h1 {
+		grid-column: 1/2;
+		grid-row: 1/2;
+	}
+
+	.section-1 h1+p {
+		grid-column: 1/2;
+		grid-row: 2/3;
+	}
+
+	.section-1 div {
+		grid-column: 1/2;
+		grid-row: 3/4;
+	}
+
+	.sports {
+		display: flex;
+	}
+
+	.discover {
+		width: 40%;
+	}
+
+	.school {
+		width: 40%;
+		float: left;
+	}
+
+	.president {
+		clear: left;
+		display: flex;
+		align-items: center;
+	}
+
+	.enter {
+		float: right;
+		width: 40%;
+	}
+
+	.footer {
+		clear: right;
+	}
+
+
+	/* about page*/
+
+	.c-1 {
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+	}
+
+	.c-2 {
+		grid-column: 1/2;
+	}
+	
+	.c-1 img {
+		grid-column: 2/3;
+	}
+
+	.flexes {
+		display: flex;
+	}
+
+	.sponsors {
+		display: flex;
+		width: 30%;
+		justify-content: space-around;
+	}
+
+
+	/* contact*/
+	.c-1 .form {
+		grid-column: 2/3;
+	}
+
+	.c-1 i {
+		grid-column: 2/3;
+	}
+}
